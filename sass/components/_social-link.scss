@@ -1,0 +1,15 @@
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social__icon {
+  fill: currentColor;
+}

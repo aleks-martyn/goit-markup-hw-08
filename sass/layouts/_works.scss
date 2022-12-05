@@ -1,0 +1,29 @@
+.section--works {
+  padding-top: 0;
+}
+
+.works {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: var(--background-section-works-color);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+}
