@@ -1,5 +1,6 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 
@@ -7,12 +8,23 @@
     fill: currentColor;
   }
 }
+
+.clients__item {
+  max-width: calc((100% - 2 * 30px) / 2);
+  height: 92px;
+  @media screen and (min-width: 768px) {
+    max-width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: calc((100% - 6 * 30px) / 6);
+  }
+}
+
 .clients__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
   color: var(--social-links-color);
   border: 1px solid;
   border-color: var(--social-links-color);
