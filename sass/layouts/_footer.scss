@@ -1,7 +1,7 @@
 .container--footer {
   @media screen and (min-width: 1200px) {
     display: flex;
-    gap: 70px;
+    gap: 94px;
     align-items: baseline;
   }
 }
@@ -31,13 +31,16 @@
   &__wrappage {
     @media screen and (min-width: 768px) {
       display: flex;
+      align-items: baseline;
     }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 76px;
+      justify-content: center;
+      margin-bottom: 60px;
     }
   }
 
-  &__wrap {
+  &__wrap {min-width: 209px;
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     }
@@ -88,8 +91,8 @@
 }
 
 .page-footer__subscription {
-  @media screen and (min-width: 1200px) {
-    margin-left: 23px;
+  @media screen and (max-width: 1199px) {
+  text-align: center;
   }
 }
 
@@ -107,7 +110,7 @@
 }
 
 .page-footer__input {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   outline: transparent;
   border-width: 1px;
@@ -130,7 +133,7 @@
     max-width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 358px;
+    min-width: 356px;
   }
 
   &::placeholder {
