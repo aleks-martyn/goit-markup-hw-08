@@ -224,7 +224,7 @@ button {
           align-items: center;
 }
 
-.menu-button {
+.menu-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -232,6 +232,18 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-toggle .icon-cross {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-cross {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
 }
 
 .site-nav {

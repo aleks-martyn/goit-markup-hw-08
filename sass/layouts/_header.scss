@@ -23,12 +23,24 @@
   }
 }
 
-.menu-button {
+.menu-toggle {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-toggle .icon-cross {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-cross {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
 }
 
 .site-nav {
