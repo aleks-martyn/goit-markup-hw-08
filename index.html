@@ -26,10 +26,21 @@
         >
 
         <nav class="page-header__nav">
-          <button type="button" class="menu-button">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use href="./images/symbol-defs.svg#icon-close-40px"></use>
-              <use href="./images/symbol-defs.svg#icon-menu-40px"></use>
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-close-40px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu-40px"
+              ></use>
             </svg>
           </button>
           <ul class="site-nav">
