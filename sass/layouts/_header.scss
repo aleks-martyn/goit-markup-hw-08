@@ -1,9 +1,14 @@
 .container--header {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-header {
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
   border-bottom: 1px solid var(--header-border-color);
 
   &__logo {

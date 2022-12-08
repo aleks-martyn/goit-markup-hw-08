@@ -11,7 +11,7 @@
 
 .clients__item {
   max-width: calc((100% - 2 * 30px) / 2);
-  height: 92px;
+  
   @media screen and (min-width: 768px) {
     max-width: calc((100% - 3 * 30px) / 3);
   }
@@ -22,6 +22,7 @@
 }
 
 .clients__thumb {
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
