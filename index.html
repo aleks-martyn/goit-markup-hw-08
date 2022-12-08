@@ -21,14 +21,18 @@
 
     <header class="page-header">
       <div class="container container--header">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="logo page-header__logo"
-            ><span class="logo__text">Web</span>Studio</a
-          >
+        <a href="./index.html" class="logo page-header__logo"
+          ><span class="logo__text">Web</span>Studio</a
+        >
 
+  <!--      <nav class="page-header__nav">
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--current"
+                >Студія</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
@@ -41,7 +45,10 @@
 
         <ul class="contacts">
           <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts-link contacts-link--header">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-link contacts-link--header"
+            >
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
@@ -49,7 +56,10 @@
             >
           </li>
           <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts-link contacts-link--header">
+            <a
+              href="tel:+380961111111"
+              class="contacts-link contacts-link--header"
+            >
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -57,7 +67,7 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
 
     <main>
@@ -66,11 +76,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button
-            type="button"
-            class="button button--hero"
-            data-modal-open
-          >
+          <button type="button" class="button button--hero" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -550,7 +556,7 @@
 
     <footer class="page-footer">
       <div class="container container--footer">
-        <div>
+        <div class="page-footer__wrap">
           <a href="./index.html" class="logo page-footer__logo"
             ><span class="logo__text">Web</span>Studio</a
           >
@@ -568,13 +574,17 @@
               </li>
 
               <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="contacts-link contacts-link--footer"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-link contacts-link--footer"
                   >info@devstudio.com</a
                 >
               </li>
 
               <li class="address__item">
-                <a href="tel:+380961111111" class="contacts-link contacts-link--footer"
+                <a
+                  href="tel:+380961111111"
+                  class="contacts-link contacts-link--footer"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -742,13 +752,13 @@
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю
-              <a href="#" class="consent__agreement-link">Умови договору</a></label
+              <a href="#" class="consent__agreement-link"
+                >Умови договору</a
+              ></label
             >
           </div>
 
-          <button type="submit" class="button modal__button">
-            Відправити
-          </button>
+          <button type="submit" class="button modal__button">Відправити</button>
         </form>
       </div>
     </div>
