@@ -57,8 +57,14 @@
 }
 
 .page-footer__form {
-  display: flex;
-  gap: 12px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.page-footer__field {
+  margin-bottom: 20px;
 }
 
 .page-footer__input {
