@@ -8,6 +8,8 @@
 .page-header {
   @media screen and (max-width: 767px) {
     height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   border-bottom: 1px solid var(--header-border-color);
 
