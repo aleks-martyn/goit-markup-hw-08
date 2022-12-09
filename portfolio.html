@@ -21,64 +21,114 @@
 
     <header class="page-header">
       <div class="container container--header">
-        <a href="./index.html" class="logo page-header__logo"><span class="logo__text">Web</span>Studio</a>
+        <a href="./index.html" class="logo page-header__logo"
+          ><span class="logo__text">Web</span>Studio</a
+        >
         <div class="page-header__wrap">
           <nav class="page-header__nav">
-            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-              <svg class="menu-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-40px"></use>
-                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close-40px"></use>
+            <button
+              type="button"
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="menu-icon"
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/symbol-defs.svg#icon-menu-40px"
+                ></use>
+                <use
+                  class="icon-cross"
+                  href="./images/symbol-defs.svg#icon-close-40px"
+                ></use>
               </svg>
             </button>
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link site-nav__link">Студія</a>
+                <a href="./index.html" class="site-nav__link site-nav__link"
+                  >Студія</a
+                >
               </li>
-    
+
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link--current">Портфоліо</a>
+                <a href="./portfolio.html" class="site-nav__link--current"
+                  >Портфоліо</a
+                >
               </li>
-    
+
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link">Контакти</a>
               </li>
             </ul>
           </nav>
-    
+
           <ul class="contacts">
             <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts-link contacts-link--header">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-link contacts-link--header"
+              >
                 <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
-    
+
             <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts-link contacts-link--header">
+              <a
+                href="tel:+380961111111"
+                class="contacts-link contacts-link--header"
+              >
                 <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 11</a>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-    
+
           <ul class="mobile-soc">
             <li class="mobile-soc__item">
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"
-                class="mobile-soc__link">Instagram</a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="mobile-soc__link"
+                >Instagram</a
+              >
             </li>
             <li class="mobile-soc__item">
-              <a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"
-                class="mobile-soc__link">Twitter</a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="mobile-soc__link"
+                >Twitter</a
+              >
             </li>
             <li class="mobile-soc__item">
-              <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"
-                class="mobile-soc__link">Facebook</a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="mobile-soc__link"
+                >Facebook</a
+              >
             </li>
             <li class="mobile-soc__item">
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"
-                class="mobile-soc__link">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="mobile-soc__link"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -96,16 +146,24 @@
               <button type="button" class="button button--filter">Усі</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button button--filter">Веб-сайти</button>
+              <button type="button" class="button button--filter">
+                Веб-сайти
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button button--filter">Додатки</button>
+              <button type="button" class="button button--filter">
+                Додатки
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button button--filter">Дизайн</button>
+              <button type="button" class="button button--filter">
+                Дизайн
+              </button>
             </li>
             <li class="filter__item">
-              <button type="button" class="button button--filter">Маркетинг</button>
+              <button type="button" class="button button--filter">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -117,9 +175,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/technokriack.jpg"
+                    srcset="
+                      ./images/technokriack@1x.jpg 1x,
+                      ./images/technokriack@2x.jpg 2x
+                    "
+                    src="./images/technokriack@1x.jpg"
                     alt="Сторінка на дісплеї ноутбука"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -143,9 +205,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/poster-sport.jpg"
+                    srcset="
+                      ./images/poster-sport@1x.jpg 1x,
+                      ./images/poster-sport@2x.jpg 2x
+                    "
+                    src="./images/poster-sport@1x.jpg"
                     alt="Два баскетболіста борються за м'яч"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -171,9 +237,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/seafood.jpg"
+                    srcset="
+                      ./images/seafood@1x.jpg 1x,
+                      ./images/seafood@2x.jpg 2x
+                    "
+                    src="./images/seafood@1x.jpg"
                     alt="Назва ресторану на фоні риби"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -199,9 +269,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/project-prime.jpg"
+                    srcset="
+                      ./images/project-prime@1x.jpg 1x,
+                      ./images/project-prime@2x.jpg 2x
+                    "
+                    src="./images/project-prime@1x.jpg"
                     alt="Навушники"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -227,9 +301,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/project-boxes.jpg"
+                    srcset="
+                      ./images/project-boxes@1x.jpg 1x,
+                      ./images/project-boxes@2x.jpg 2x
+                    "
+                    src="./images/project-boxes@1x.jpg"
                     alt="Біла та коричнева коробки"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -255,9 +333,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/inspiration.jpg"
+                    srcset="
+                      ./images/inspiration@1x.jpg 1x,
+                      ./images/inspiration@2x.jpg 2x
+                    "
+                    src="./images/inspiration@1x.jpg"
                     alt="Сторінка на моніторі комп'ютера"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -283,9 +365,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/limited-edition.jpg"
+                    srcset="
+                      ./images/limited-edition@1x.jpg 1x,
+                      ./images/limited-edition@2x.jpg 2x
+                    "
+                    src="./images/limited-edition@1x.jpg"
                     alt="Розгорнутий журнал"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -311,9 +397,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/project-lab.jpg"
+                    srcset="
+                      ./images/project-lab@1x.jpg 1x,
+                      ./images/project-lab@2x.jpg 2x
+                    "
+                    src="./images/project-lab@1x.jpg"
                     alt="Бирка з написом"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -339,9 +429,13 @@
                 <div class="portfolio__thumb">
                   <img
                     class="portfolio__image"
-                    src="./images/growing-business.jpg"
+                    srcset="
+                      ./images/growing-business@1x.jpg 1x,
+                      ./images/growing-business@2x.jpg 2x
+                    "
+                    src="./images/growing-business@1x.jpg"
                     alt="Сторінка додатку на моніторі ноутбука"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <div class="portfolio__overlay">
@@ -354,7 +448,9 @@
                   </div>
                 </div>
                 <div class="portfolio__wrapper">
-                  <h2 class="portfolio__subtitle" lang="en">Growing Business</h2>
+                  <h2 class="portfolio__subtitle" lang="en">
+                    Growing Business
+                  </h2>
                   <p class="portfolio__description">Додаток</p>
                 </div>
               </a>
@@ -370,59 +466,90 @@
       <div class="container container--footer">
         <div class="page-footer__wrappage">
           <div class="page-footer__wrap">
-            <a href="./index.html" class="logo page-footer__logo"><span class="logo__text">Web</span>Studio</a>
-    
+            <a href="./index.html" class="logo page-footer__logo"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+
             <address class="address">
               <ul class="address__list">
                 <li class="address__item">
-                  <a href="https://goo.gl/maps/zwCasqjWgcNjda1f8" target="_blank" rel="noreferrer noopener"
-                    class="contacts-link contacts-link--address">м. Київ, пр-т Лесі Українки, 26</a>
+                  <a
+                    href="https://goo.gl/maps/zwCasqjWgcNjda1f8"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="contacts-link contacts-link--address"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
                 </li>
-    
+
                 <li class="address__item">
-                  <a href="mailto:info@devstudio.com" class="contacts-link contacts-link--footer">info@devstudio.com</a>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contacts-link contacts-link--footer"
+                    >info@devstudio.com</a
+                  >
                 </li>
-    
+
                 <li class="address__item">
-                  <a href="tel:+380961111111" class="contacts-link contacts-link--footer">+38 096 111 11 11</a>
+                  <a
+                    href="tel:+380961111111"
+                    class="contacts-link contacts-link--footer"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-    
+
           <div class="page-footer__wrapper">
             <h3 class="page-footer__subtitle">приєднуйтесь</h3>
             <ul class="social">
               <li class="social__item">
-                <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"
-                  class="social__link social__link--footer">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="social__link social__link--footer"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-    
+
               <li class="social__item">
-                <a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"
-                  class="social__link social__link--footer">
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="social__link social__link--footer"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-    
+
               <li class="social__item">
-                <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"
-                  class="social__link social__link--footer">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="social__link social__link--footer"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-    
+
               <li class="social__item">
-                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"
-                  class="social__link social__link--footer">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="social__link social__link--footer"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -431,16 +558,21 @@
             </ul>
           </div>
         </div>
-    
+
         <div class="page-footer__subscription">
           <h3 class="page-footer__subtitle">Підпишіться на розсилку</h3>
           <form class="page-footer__form">
             <div class="page-footer__field">
               <label class="page-footer__label">
-                <input type="email" name="mail" class="page-footer__input" placeholder="E-mail" />
+                <input
+                  type="email"
+                  name="mail"
+                  class="page-footer__input"
+                  placeholder="E-mail"
+                />
               </label>
             </div>
-    
+
             <div class="page-footer__send">
               <button type="submit" class="button button--footer">
                 Підписатися
