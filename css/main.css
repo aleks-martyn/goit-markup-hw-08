@@ -196,9 +196,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 84px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--header {
+    gap: 93px;
   }
 }
 
@@ -225,6 +231,23 @@ button {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 83px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__wrap {
+    gap: 315px;
+  }
+}
+
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -236,6 +259,11 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle .icon-cross {
@@ -264,13 +292,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 50px;
   }
-}
-.page-header__logo + .site-nav {
-  margin-left: 93px;
-}
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .site-nav__link {
@@ -307,17 +330,27 @@ button {
   border-radius: 2px;
 }
 
-.contacts {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
-.contacts__item + .contacts__item {
-  margin-left: 30px;
+
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-link--header {
@@ -327,17 +360,21 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 142px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  min-width: 138px;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 1200px) {
+  .contacts-link--header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
