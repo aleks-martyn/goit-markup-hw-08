@@ -203,6 +203,7 @@ button {
 }
 
 .page-header {
+  position: relative;
   border-bottom: 1px solid var(--header-border-color);
 }
 @media screen and (max-width: 767px) {
@@ -225,6 +226,9 @@ button {
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 8px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -246,10 +250,21 @@ button {
   display: none;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu-icon {
+  fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .page-header__logo + .site-nav {
   margin-left: 93px;
@@ -324,6 +339,32 @@ button {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.mobile-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-soc {
+    display: none;
+  }
+}
+
+.mobile-soc__item:not(:last-child) {
+  border-right: 1px solid var(--input-border-color);
+}
+
+.mobile-soc__link {
+  padding-right: 10px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .hero {
