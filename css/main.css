@@ -280,7 +280,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    display: none;
+    margin-bottom: 378px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -294,40 +294,54 @@ button {
 
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav__link--current {
-  position: relative;
-  color: var(--accent-color);
-}
-.site-nav__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transform: scaleX(1.1);
-          transform: scaleX(1.1);
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+@media screen and (max-width: 767px) {
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav__link--current {
+    position: relative;
+    color: var(--accent-color);
+  }
+  .site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contacts {
+    position: relative;
     margin-bottom: 64px;
   }
 }
@@ -348,7 +362,7 @@ button {
     margin-bottom: 32px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -384,6 +398,9 @@ button {
 
 @media screen and (max-width: 767px) {
   .contacts-link--tel {
+    position: absolute;
+    left: 0;
+    top: -72px;
     color: var(--accent-color);
     font-size: 34px;
   }

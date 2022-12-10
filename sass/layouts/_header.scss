@@ -70,8 +70,8 @@
 }
 
 .site-nav {
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (max-width:767px) {
+    margin-bottom: 378px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -81,15 +81,19 @@
 
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color var(--tra);
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {
@@ -97,27 +101,36 @@
   }
 }
 
-.site-nav__link--current {
-  position: relative;
-  color: var(--accent-color);
+.site-nav__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    transform: scaleX(1.1);
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+@media screen and (min-width: 768px) {
+  .site-nav__link--current {
+    position: relative;
+    color: var(--accent-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: scaleX(1.1);
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
   }
 }
 
 .contacts {
   @media screen and (max-width: 767px) {
-      margin-bottom: 64px;
-    }
+    position: relative;
+    margin-bottom: 64px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 40px;
@@ -129,14 +142,14 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }
 
 .contacts-link--header {
   color: var(--primary-text-color);
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -146,8 +159,8 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
-      }
+      color: var(--accent-color);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -159,6 +172,9 @@
 
 .contacts-link--tel {
   @media screen and (max-width: 767px) {
+    position: absolute;
+    left: 0;
+    top: -72px;
     color: var(--accent-color);
     font-size: 34px;
   }
