@@ -26,28 +26,6 @@
         >
         <div class="page-header__wrap">
           <nav class="page-header__nav">
-            <button
-              type="button"
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg
-                class="menu-icon"
-                width="40"
-                height="40"
-                aria-label="Перемикач мобільного меню"
-              >
-                <use
-                  class="icon-menu"
-                  href="./images/symbol-defs.svg#icon-menu-40px"
-                ></use>
-                <use
-                  class="icon-cross"
-                  href="./images/symbol-defs.svg#icon-close-40px"
-                ></use>
-              </svg>
-            </button>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a
@@ -93,44 +71,134 @@
             </li>
           </ul>
 
-          <ul class="mobile-soc">
-            <li class="mobile-soc__item">
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="mobile-soc__link"
-                >Instagram</a
-              >
-            </li>
-            <li class="mobile-soc__item">
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="mobile-soc__link"
-                >Twitter</a
-              >
-            </li>
-            <li class="mobile-soc__item">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="mobile-soc__link"
-                >Facebook</a
-              >
-            </li>
-            <li class="mobile-soc__item">
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="mobile-soc__link"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/symbol-defs.svg#icon-menu-40px"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close" data-menu-close>
+                <svg
+                  class="menu-icon"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
+                >
+                  <use
+                    class="icon-cross"
+                    href="./images/symbol-defs.svg#icon-close-40px"
+                  ></use>
+                </svg>
+              </button>
+              <nav class="page-header__nav">
+                <ul class="site-nav">
+                  <li class="site-nav__item">
+                    <a
+                      href="./index.html"
+                      class="site-nav__link site-nav__link--current"
+                      >Студія</a
+                    >
+                  </li>
+
+                  <li class="site-nav__item">
+                    <a href="./portfolio.html" class="site-nav__link"
+                      >Портфоліо</a
+                    >
+                  </li>
+
+                  <li class="site-nav__item">
+                    <a href="./index.html" class="site-nav__link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="mob-menu-bottom">
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contacts-link contacts-link--header"
+                  >
+                    <svg class="contacts__icon" width="16" height="12">
+                      <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="contacts-link contacts-link--header contacts-link--tel"
+                  >
+                    <svg class="contacts__icon" width="10" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-smartphone"
+                      ></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-soc">
+                <li class="mobile-soc__item">
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="mobile-soc__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-soc__item">
+                  <a
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="mobile-soc__link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mobile-soc__item">
+                  <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="mobile-soc__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-soc__item">
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="mobile-soc__link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -218,8 +286,8 @@
             <li class="works__item">
               <img
                 srcset="
-                ./images/box-one-desk@1x.jpg 1x,
-                ./images/box-one-desk@2x.jpg 2x
+                  ./images/box-one-desk@1x.jpg 1x,
+                  ./images/box-one-desk@2x.jpg 2x
                 "
                 src="./images/box-one-desk@1x.jpg"
                 alt="руки фахівця який набирає код наклавіатурі"
@@ -234,8 +302,8 @@
             <li class="works__item">
               <img
                 srcset="
-                ./images/box-two-desk@1x.jpg 1x,
-                ./images/box-two-desk@2x.jpg 2x
+                  ./images/box-two-desk@1x.jpg 1x,
+                  ./images/box-two-desk@2x.jpg 2x
                 "
                 src="./images/box-two-desk@1x.jpg"
                 alt="фахівець компонує сторінки мобільного додатку"
@@ -250,8 +318,8 @@
             <li class="works__item">
               <img
                 srcset="
-                ./images/box-three-desk@1x.jpg 1x,
-                ./images/box-three-desk@2x.jpg 2x
+                  ./images/box-three-desk@1x.jpg 1x,
+                  ./images/box-three-desk@2x.jpg 2x
                 "
                 src="./images/box-three-desk@1x.jpg"
                 alt="палітра кольорів на екрані планшета"
@@ -276,8 +344,8 @@
               <img
                 class="team__image"
                 srcset="
-                ./images/team-one@1x.jpg 1x,
-                ./images/team-one@2x.jpg 2x
+                  ./images/team-one@1x.jpg 1x,
+                  ./images/team-one@2x.jpg 2x
                 "
                 src="./images/team-one@1x.jpg"
                 alt="Ігор Дем'яненко"
@@ -354,8 +422,8 @@
               <img
                 class="team__image"
                 srcset="
-                ./images/team-two@1x.jpg 1x,
-                ./images/team-two@2x.jpg 2x
+                  ./images/team-two@1x.jpg 1x,
+                  ./images/team-two@2x.jpg 2x
                 "
                 src="./images/team-two@1x.jpg"
                 alt="Ольга Рєпіна"
@@ -432,8 +500,8 @@
               <img
                 class="team__image"
                 srcset="
-                ./images/team-three@1x.jpg 1x,
-                ./images/team-three@2x.jpg 2x
+                  ./images/team-three@1x.jpg 1x,
+                  ./images/team-three@2x.jpg 2x
                 "
                 src="./images/team-three@1x.jpg"
                 alt="Микола Тарасов"
@@ -510,8 +578,8 @@
               <img
                 class="team__image"
                 srcset="
-                ./images/team-four@1x.jpg 1x,
-                ./images/team-four@2x.jpg 2x
+                  ./images/team-four@1x.jpg 1x,
+                  ./images/team-four@2x.jpg 2x
                 "
                 src="./images/team-four@1x.jpg"
                 alt="Михайло Єрмаков"
