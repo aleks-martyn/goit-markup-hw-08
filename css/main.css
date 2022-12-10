@@ -144,8 +144,10 @@ button {
   -webkit-transition: color var(--tra);
   transition: color var(--tra);
 }
-.contacts-link:hover, .contacts-link:focus {
-  color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .contacts-link:hover, .contacts-link:focus {
+    color: var(--accent-color);
+  }
 }
 
 .button {
@@ -377,6 +379,11 @@ button {
   margin-right: 8px;
   fill: currentColor;
 }
+@media screen and (max-width: 767px) {
+  .contacts__icon {
+    display: none;
+  }
+}
 
 .mobile-soc {
   display: -webkit-box;
@@ -389,11 +396,9 @@ button {
     display: none;
   }
 }
-
 .mobile-soc__item:not(:last-child) {
   border-right: 1px solid var(--input-border-color);
 }
-
 .mobile-soc__link {
   padding-right: 10px;
   color: var(--accent-color);

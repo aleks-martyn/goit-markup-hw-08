@@ -5,8 +5,10 @@
   text-decoration: none;
   transition: color var(--tra);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
