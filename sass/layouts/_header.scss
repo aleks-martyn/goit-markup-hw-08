@@ -23,12 +23,17 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 .page-header__wrap {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 83px;
@@ -70,7 +75,7 @@
 }
 
 .site-nav {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 378px;
   }
   @media screen and (min-width: 768px) {
