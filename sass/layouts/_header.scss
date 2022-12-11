@@ -44,7 +44,7 @@
   }
 }
 
-.menu-toggle {
+.menu-open {
   position: absolute;
   top: 10px;
   right: 8px;
@@ -56,22 +56,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.menu-toggle .icon-cross {
-  display: none;
-}
-
-.menu-toggle.js-open-menu .icon-cross {
-  display: block;
-}
-
-.menu-toggle.js-open-menu .icon-menu {
-  display: none;
-}
-
-.menu-icon {
-  fill: currentColor;
 }
 
 .site-nav {
