@@ -261,12 +261,18 @@ button {
   margin: 0;
   padding: 0;
   border: none;
+  fill: var(--title-text-color);
   background-color: transparent;
+  -webkit-transition: fill var(--tra);
+  transition: fill var(--tra);
 }
 @media screen and (min-width: 768px) {
   .menu-open {
     display: none;
   }
+}
+.menu-open:hover, .menu-open:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -434,6 +440,7 @@ button {
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
@@ -442,6 +449,10 @@ button {
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.mob-menu.is-hidden {
+  display: none;
 }
 
 .mob-menu > .container-menu {

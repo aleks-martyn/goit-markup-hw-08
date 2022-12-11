@@ -1,6 +1,7 @@
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
   width: 100vw;
   height: 100vh;
@@ -10,6 +11,8 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
+.mob-menu.is-hidden {display: none;}
 
 .mob-menu > .container-menu {
   height: 100%;

@@ -52,9 +52,16 @@
   margin: 0;
   padding: 0;
   border: none;
+  fill: var(--title-text-color);
   background-color: transparent;
+  transition: fill var(--tra);
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
 
