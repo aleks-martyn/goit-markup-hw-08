@@ -413,30 +413,6 @@ button {
   }
 }
 
-.mobile-soc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-@media screen and (min-width: 768px) {
-  .mobile-soc {
-    display: none;
-  }
-}
-.mobile-soc__item:not(:last-child) {
-  border-right: 1px solid var(--input-border-color);
-}
-.mobile-soc__link {
-  padding-right: 10px;
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
-
 .mob-menu {
   position: fixed;
   top: 0;
@@ -500,6 +476,30 @@ button {
 }
 .menu-close:hover, .menu-close:focus {
   fill: var(--accent-color);
+}
+
+.mobile-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-soc {
+    display: none;
+  }
+}
+.mobile-soc__item:not(:last-child) {
+  border-right: 1px solid var(--input-border-color);
+}
+.mobile-soc__link {
+  padding-right: 10px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .hero {
